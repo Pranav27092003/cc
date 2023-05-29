@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RESIN PRODUCTS</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url('peach.jpeg');
+            background-size: cover;
+
+        }
+
+        .he{
+            margin-top: -10px;
+            width: 100%;
+            height: 250px;
+
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        .product {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+            border: 1px solic black;
+        }
+
+        .product h3,
+        h4 {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .cost {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .navbar {
+            background-color: rgb(255, 79, 188);
+            border-radius: 0px;
+            opacity: 0.8;
+            margin-top: -20px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin-left: 40px;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20ox;
+            padding-top: 20px;
+        }
+
+        .navbar li a {
+            padding-top: 20px;
+            text-decoration: none;
+            color: white;
+            margin: 13px;
+
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 4px 17px;
+            width: 129px;
+        }
+
+        .logo {
+            margin-left: -20px;
+            margin-top: -10px;
+            width: 50px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #f95d03;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 25%;
+            opacity: 0.8;
+            margin-top: 100px;
+            margin-left: 400px;
+        }
+
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        #mydiv {
+            height: 115px;
+            max-width: 300px;
+            margin-top: 14px;
+            margin-left: 330px;
+            padding: 20px;
+            border-radius: 5%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        .b1 {
+            width: 200px;
+            margin-left: -300px;
+            padding: 12px;
+            margin-top: 7px;
+            border-radius: 15px;
+            color: #111110;
+            text-align: center;
+            font-weight: bolder;
+            background-color: rgb(16, 245, 8);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"><img src="lcor.jpg" class="logo"></a></li>
+                <li><a href="loginpage.html">HOME</a></li>
+                <li><a href="dreamcatchers.html">DREAMCATCHERS</a></li>
+                <li><a href="resinproducts.html">RESIN PRODUCTS</a></li>
+                <li><a href="moreaboutus.html">GALLERY</a></li>
+                <li><a href="mainpage.html">CONTACT US</a> </li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="he">
+        <h1><img src="head1.png" class="he"> </h1>
+    </div>
+
+    <div class="container">
+
+        <div class="product">
+            <div>
+                <img src="a.jpg" alt="Product 1" class="image" id="img1">
+                <h3>3-D resin word</h3>
+                <h4 class="cost"> RS. 400</h4>
+            </div>
+            <div>
+                <img src="b.jpeg" alt="Product 2" class="image">
+                <h3>Single pic resin frame</h3>
+                <h4 class="cost"> RS. 500</h4>
+
+            </div>
+            <div>
+                <img src="c.jpg" alt="Product 3" class="image">
+                <h3>Multi pic resin frame</h3>
+                <h4 class="cost"> RS. 900</h4>
+            </div>
+            <div>
+                <img src="d.jpg" alt="Product 4" class="image">
+                <h3>3-D  Resin Alphabet</h3>
+                <h4 class="cost"> RS. 200</h4>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="product">
+            <div>
+                <img src="e.webp" alt="Product 1" class="image">
+                <h3>Resin Clock</h3>
+                <h4 class="cost"> RS. 900</h4>
+            </div>
+            <div>
+                <img src="f.webp" alt="Product 2" class="image">
+                <h3>Resin Bookmarks</h3>
+                <h4 class="cost"> RS. 200</h4>
+
+            </div>
+            <div>
+                <img src="g.jpg" alt="Product 3" class="image">
+                <h3>Resin made serving trays</h3>
+                <h4 class="cost"> RS. 300</h4>
+            </div>
+            <div>
+                <img src="h.avif" alt="Product 4" class="image">
+                <h3>Flower petal resin craft</h3>
+                <h4 class="cost"> RS. 300</h4>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="product">
+            <div>
+                <img src="i.jpg" alt="Product 1" class="image">
+                <h3>Resin pendants</h3>
+                <h4 class="cost"> RS. 100</h4>
+            </div>
+            <div>
+                <img src="j.jpg" alt="Product 2" class="image">
+                <h3>Resin coasters *4</h3>
+                <h4 class="cost"> RS. 1500</h4>
+
+            </div>
+            <div>
+                <img src="k.jpeg" alt="Product 3" class="image">
+                <h3>Birthday wishing frame</h3>
+                <h4 class="cost"> RS. 400</h4>
+            </div>
+            <div>
+                <img src="l.jpg" alt="Product 4" class="image">
+                <h3>Heart shape frame</h3>
+                <h4 class="cost"> RS. 700</h4>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="product">
+            <div>
+                <img src="m.webp" alt="Product 1" class="image">
+                <h3>Resin vase</h3>
+                <h4 class="cost"> RS. 300</h4>
+            </div>
+            <div>
+                <img src="n.webp" alt="Product 2" class="image">
+                <h3>Resin long cylindrical pendants</h3>
+                <h4 class="cost"> RS. 250</h4>
+
+            </div>
+            <div>
+                <img src="o.webp" alt="Product 3" class="image">
+                <h3>Resin flower vase</h3>
+                <h4 class="cost"> RS. 700</h4>
+            </div>
+            <div>
+                <img src="p.jpg" alt="Product 4" class="image">
+                <h3>Heart shape key chains</h3>
+                <h4 class="cost"> RS. 100</h4>
+            </div>
+
+        </div>
+    </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="mydiv">
+            <form action="login.php" method="POST">
+                <input type="cart" value="Add to cart" onclick="addToCart()" class="b1"><br>
+                <input type="order" value="Order Now" onclick="orderNow()" class="b1">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementsByClassName("product")[0];
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+span.onclick = function () {
+    modal.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementsByClassName("product")[1];
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+span.onclick = function () {
+    modal.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementsByClassName("product")[2];
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+span.onclick = function () {
+    modal.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementsByClassName("product")[3];
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+span.onclick = function () {
+    modal.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementsByClassName("product")[4];
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+span.onclick = function () {
+    modal.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+
+</html>

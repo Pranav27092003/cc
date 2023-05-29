@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dreamcatchers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url('peach.jpeg');
+            background-size: cover;
+
+        }
+
+        .he {
+            margin-top: -10px;
+            width: 100%;
+            height: 300px;
+
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+
+            border-radius: 5px;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        .product {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 500px;
+            border-radius: 5px;
+            border: 1px solic black;
+        }
+
+        .product h3,
+        h4 {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .cost {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .navbar {
+            background-color: rgb(255, 79, 188);
+            border-radius: 0px;
+            margin-top: -20px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin-left: 40px;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20ox;
+            padding-top: 20px;
+        }
+
+        .navbar li a {
+            padding-top: 20px;
+            text-decoration: none;
+            color: white;
+            margin: 13px;
+
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 4px 17px;
+            width: 129px;
+        }
+
+        .logo {
+            margin-left: -20px;
+            margin-top: -10px;
+            width: 50px;
+        }
+
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #f95d03;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 25%;
+            opacity: 0.8;
+            margin-top: 100px;
+            margin-left: 400px;
+
+        }
+
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        #mydiv {
+            height: 115px;
+            max-width: 300px;
+            margin-top: 14px;
+            margin-left: 330px;
+            padding: 20px;
+            border-radius: 5%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        .b1 {
+            width: 200px;
+            margin-left: -300px;
+            padding: 12px;
+            margin-top: 7px;
+            border-radius: 15px;
+            color: #111110;
+            text-align: center;
+            font-weight: bolder;
+            background-color: rgb(16, 245, 8);
+        }
+
+        .b1:hover {
+            cursor: pointer;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"><img src="lcor.jpg" class="logo"></a></li>
+                <li><a href="loginpage.html">HOME</a></li>
+                <li><a href="dreamcatchers.html">DREAMCATCHERS</a></li>
+                <li><a href="resinproducts.html">RESIN PRODUCTS</a></li>
+                <li><a href="moreaboutus.html">GALLERY</a></li>
+                <li><a href="mainpage.html">CONTACT US</a> </li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="he">
+        <h1><img src="head1.png" class="he"> </h1>
+    </div>
+
+    <div class="container">
+
+        <div class="product">
+            <div>
+                <img src="1.PNG" alt="Product 1" class="image" id="img1">
+                <h3>Multicolor Dreamcatcher</h3>
+                <h4 class="cost"> RS. 900</h4>
+            </div>
+            <div>
+                <img src="2.PNG" alt="Product 2" class="image" id="img2">
+                <h3>Couple name Dreamcatcher</h3>
+                <h4 class="cost"> RS. 1400</h4>
+
+            </div>
+            <div>
+                <img src="3.PNG" alt="Product 3" class="image">
+                <h3>Blue feather Dreamcatcher</h3>
+                <h4 class="cost"> RS. 1200</h4>
+            </div>
+            <div>
+                <img src="5.PNG" alt="Product 4" class="image">
+                <h3>Red feather Dreamcatcher</h3>
+                <h4 class="cost"> RS. 1200</h4>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="product">
+            <div>
+                <img src="6.PNG" alt="Product 1" class="image">
+                <h3>Keychain Dreamcatchers</h3>
+                <h4 class="cost"> RS. 200</h4>
+            </div>
+            <div>
+                <img src="7.PNG" alt="Product 2" class="image">
+                <h3>Keychain Dreamcatchers</h3>
+                <h4 class="cost"> RS. 200</h4>
+
+            </div>
+            <div>
+                <img src="8.PNG" alt="Product 3" class="image">
+                <h3>Car hanging Dreamcatcher</h3>
+                <h4 class="cost"> RS. 300</h4>
+            </div>
+            <div>
+                <img src="9.PNG" alt="Product 4" class="image">
+                <h3>Car hanging Dreamcatcher</h3>
+                <h4 class="cost"> RS. 300</h4>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="product">
+            <div>
+                <img src="dc.jpeg" alt="Product 1" class="image">
+                <h3>Wall hanging Blue Dreamcatcher</h3>
+                <h4 class="cost"> RS. 900</h4>
+            </div>
+            <div>
+                <img src="dc1.jpg" alt="Product 2" class="image">
+                <h3>Peacock feather Dreamcatchers</h3>
+                <h4 class="cost"> RS. 1500</h4>
+
+            </div>
+            <div>
+                <img src="dc2.jpg" alt="Product 3" class="image">
+                <h3>Wall hanging Pink Dreamcatcher</h3>
+                <h4 class="cost"> RS. 1300</h4>
+            </div>
+            <div>
+                <img src="dc3.jpg" alt="Product 4" class="image">
+                <h3>Lightening Dreamcatcher</h3>
+                <h4 class="cost"> RS. 900</h4>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="mydiv">
+                <form action="login.php" method="POST">
+                    <input type="cart" value="Add to cart" onclick="addToCart()" class="b1"><br>
+                    <input type="order" value="Order Now" onclick="orderNow()" class="b1">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("product")[0];
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("product")[1];
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("product")[2];
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

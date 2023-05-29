@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('loginimage.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+        }
+
+        .container {
+            height: 215px;
+            max-width: 300px;
+            margin-top: 48px;
+            margin-left: 330px;
+            padding: 20px;
+            background-color: #626060;
+            border-radius: 5%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+             margin-top:-10px ;
+        }
+
+        label,
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+            height: 25px;
+            border: 10px
+        }
+
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            margin-left: 50px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 150px;
+            margin-top: 18px;
+            height: 34px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ea4f07;
+        }
+
+        .header {
+            margin-top: -10px;
+            width: 400px;
+            height: 250px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        function welcome() { 
+             
+            window.open("mainpage.html");  
+        }   
+        </script>
+
+    <div class="header">
+        <h1><img src="lon.PNG" class="header"> </h1>
+    </div>
+
+    <div class="container">
+        <h2>LOGIN</h2>
+        <form action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login" onclick="welcome()">
+        </form>
+    </div>
+</body>
+
+</html>
